@@ -55,7 +55,7 @@ const decreaseAmount=(id)=>{
         return {...item,amount:cartIem.amount-1}
       }
       else{
-        returnitem;
+        return item;
       }
     })
     setCart(newCart)

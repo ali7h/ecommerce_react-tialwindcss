@@ -9,13 +9,12 @@ const ProductProvider=({children})=>{
 
   useEffect(()=>{
     const fetchProducts=async()=>{
-      const response = await fetch('https://fakestoreapi.com/products');
+      const response = await fetch('http://127.0.0.1:8000/Prodects/');
       const data = await response.json()
       setProducts(data)
     }
     fetchProducts()
   },[])
-  console.log(products)
 
   return(
   <ProductContext.Provider value={{products}}>

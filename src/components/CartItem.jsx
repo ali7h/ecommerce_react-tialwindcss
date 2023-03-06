@@ -15,7 +15,7 @@ function CartItem({item}) {
     <div className='flex gap-x-4py-2 lg:px-6 border-b border-gray-200 w-full text-gray-500 font-light'>
       <div className='w-full min-h-[150px] flex items-center gap-x-4'>
         <Link to={`/product/${id}`}>
-          <img className='max-w-[80px]' src={image} alt="" />
+          <img className='max-w-[80px]' src={`http://127.0.0.1:8000${image}`} alt="" />
         </Link>
         <div className='flex flex-col w-full'>
             <div className='flex justify-between mb-2'>

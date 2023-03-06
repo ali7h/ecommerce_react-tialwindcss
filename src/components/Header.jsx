@@ -22,11 +22,11 @@ function Header() {
 
   return (
     <>
-    <header className={`${isActive? 'bg-white py-4 shadow-md':'bg-none py-6'} z-10 w-full transition-all py-2 fixed`}>
-    <div className='flex container mx-auto justify-between h-full items-center lg:px-10'>
+    <header className={`${isActive? 'bg-primary py-4 shadow-md':'bg-primary py-6'} z-10 w-full transition-all py-2 fixed`}>
+    <div className='text-white flex container mx-auto justify-between h-full items-center lg:px-10'>
     <Link to={'/'}>
       <div>
-        <img className='w-[40px]' src={logo} alt="" />
+        <h1 className='text-xl'>ASTORE</h1>
       </div>
     </Link>
     <div onClick={()=>setIsOpen(!isOpen)} className='cursor-pointer flex relative'>
